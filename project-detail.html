@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detail proyek dan pratinjau dasbor.">
+    <title>Detail Proyek | Robiatul Isnaini</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="project-detail-page">
+    <nav class="navbar project-detail-navbar">
+        <a class="logo" href="index.html">Robiatul.</a>
+        <a class="project-back-link" href="index.html#projects">Kembali ke proyek</a>
+    </nav>
+
+    <main class="project-detail-main">
+        <p class="project-detail-eyebrow">DETAIL PROYEK</p>
+        <div id="project-detail-content" hidden>
+            <span id="project-category" class="badge"></span>
+            <h1 id="project-title"></h1>
+            <p id="project-description" class="project-detail-intro"></p>
+            <p id="project-technologies" class="project-detail-technologies"></p>
+            <a id="project-github-link" class="project-button" target="_blank" rel="noopener noreferrer" hidden>Lihat di GitHub</a>
+
+            <section class="project-preview-section">
+                <div class="project-detail-section-heading">
+                    <p class="project-detail-eyebrow">GAMBARAN VISUAL</p>
+                    <h2 id="preview-title"></h2>
+                </div>
+                <a id="preview-link" class="project-preview-link" target="_blank" rel="noopener noreferrer">
+                    <img id="preview-image" class="project-preview-image" alt="">
+                    <span>Buka gambar dalam ukuran penuh</span>
+                </a>
+                <p id="preview-caption" class="project-preview-caption"></p>
+            </section>
+
+            <div class="project-detail-grid">
+                <section class="project-detail-panel">
+                    <p class="project-detail-eyebrow">RINGKASAN</p>
+                    <h2>Sorotan Proyek</h2>
+                    <div id="project-highlights" class="project-highlights"></div>
+                </section>
+            </div>
+
+            <section id="project-gallery-section" class="project-preview-section" hidden>
+                <div class="project-detail-section-heading">
+                    <p class="project-detail-eyebrow">DOKUMENTASI</p>
+                    <h2>Dokumentasi Proyek</h2>
+                </div>
+                <div id="project-gallery" class="experience-evidence-grid"></div>
+            </section>
+
+            <a class="project-back-link project-bottom-link" href="index.html#projects">← Kembali ke semua proyek</a>
+        </div>
+
+        <section id="project-not-found" class="project-detail-panel" hidden>
+            <h2>Proyek tidak ditemukan</h2>
+            <p>Tautan proyek ini tidak valid atau sudah tidak tersedia.</p>
+            <a class="project-button" href="index.html#projects">Kembali ke proyek</a>
+        </section>
+    </main>
+
+    <dialog class="experience-evidence-dialog" aria-label="Pratinjau gambar proyek">
+        <button class="experience-evidence-close" type="button" aria-label="Tutup pratinjau">&times;</button>
+        <img class="experience-evidence-dialog-image" src="" alt="">
+        <p class="experience-evidence-dialog-caption"></p>
+    </dialog>
+
+    <script src="project-detail.js" defer></script>
+</body>
+</html>
